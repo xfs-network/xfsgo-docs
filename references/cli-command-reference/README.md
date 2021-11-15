@@ -1,2 +1,2 @@
-# CLI-Command Reference
+# 命令行参考
 

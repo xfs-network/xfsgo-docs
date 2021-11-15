@@ -1,31 +1,31 @@
-# CHAIN Subcommand
+# CHAIN 子命令
 
-### Usage <a href="yong-fa" id="yong-fa"></a>
+### 用法
 
 ```
 xfsgo chain [options] <sub-command>
 ```
 
-### Commands <a href="zi-ming-ling-lie-biao" id="zi-ming-ling-lie-biao"></a>
+### 子命令列表
 
 *   **gethead**
 
-    Obtain the latest block information in the local chain data
+    获取本地链数据最新区块信息
 *   **getblockbynum \<number>**
 
-    Get block information of specified height
+    查询指定高度的区块信息
 *   **getblockbyhash \<hash>**
 
-    Get the block information of the specified hash
+    查询指定 HASH 值的区块信息
 *   **gettxbyhash \<hash>**
 
-    Get the transaction information of the specified hash
+    查询指定 HASH 值的交易信息
 *   **gettxsbyblockhash \<hash>**
 
-    Get all transaction sets contained in the hash of the specified block
+    查询指定区块 HASH 值包含的所有交易集合
 *   **gettxsbyblocknum \<number>**
 
-    Get all transaction sets contained in the specified block height
+    查询指定区块高度包含的所有交易集合
 *   **getreceiptbytxhash \<hash>**
 
-    Query receipt information of specified transaction hash
+    查询指定交易 HASH 的回执信息

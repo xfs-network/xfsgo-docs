@@ -1,29 +1,26 @@
 # Table of contents
 
-* [What is XFS?](README.md)
+* [XFSGO 介绍](README.md)
 
-## GET STARTED
+## 开始 <a href="get-started" id="get-started"></a>
 
-* [Installation](get-started/installation.md)
-* [Quick start](get-started/quick-start.md)
+* [安装指引](get-started/installation.md)
+* [快速启动](get-started/quick-start.md)
 
-## Base Usage
+## 基础操作 <a href="base-usage" id="base-usage"></a>
 
-* [Node](base-usage/node.md)
-* [Wallet](base-usage/wallet.md)
-* [Miner](base-usage/miner.md)
-* [Chain](base-usage/chain.md)
+* [节点配置](base-usage/node.md)
+* [钱包管理](base-usage/wallet.md)
+* [启动挖矿](base-usage/miner.md)
+* [本地链管理](base-usage/chain.md)
 
-## References
+## 参考手册 <a href="references" id="references"></a>
 
-* [CLI-Command Reference](references/cli-command-reference/README.md)
-  * [DAEMON Subcommand](references/cli-command-reference/daemon-subcommand.md)
-  * [WALLET Subcommand](references/cli-command-reference/wallet-subcommand.md)
-  * [TXPOOL Subcommand](references/cli-command-reference/txpool-subcommand.md)
-  * [MINER Subcommand](references/cli-command-reference/miner-subcommand.md)
-  * [CHAIN Subcommand](references/cli-command-reference/chain-subcommand.md)
-  * [NET Subcommand](references/cli-command-reference/net-subcommand.md)
-
-***
-
-* [Configuration Reference](configuration-reference.md)
+* [命令行参考](references/cli-command-reference/README.md)
+  * [DAEMON 子命令](references/cli-command-reference/daemon-subcommand.md)
+  * [WALLET 子命令](references/cli-command-reference/wallet-subcommand.md)
+  * [TXPOOL 子命令](references/cli-command-reference/txpool-subcommand.md)
+  * [MINER 子命令](references/cli-command-reference/miner-subcommand.md)
+  * [CHAIN 子命令](references/cli-command-reference/chain-subcommand.md)
+  * [NET 子命令](references/cli-command-reference/net-subcommand.md)
+* [配置文件参考](references/configuration-reference.md)

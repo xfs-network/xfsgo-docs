@@ -1,28 +1,32 @@
-# What is XFS?
+---
+description: >-
+  XFS 是一个新的、功能强大且高效的区块链平台。它通过具有高可用性和安全性的P2P（对等）网络在internet上存储文件，但是 XFS
+  本身只记录用户写入的存储合同，而不是将存储在分布式文件系统中的数据资产。XFS的目标是协议的多种实现，以保证XFS网络的安全性和弹性。
+---
 
-XFS (X File System) is a new, powerful and efficient cloud storage platform. It stores files on the internet by P2P (peer to peer) network with high level of availability & security However, XFS itself only records the storage contracts users write other than data assets that will be stored in a distributed file system.  XFS is targeting multiple implementations of the protocol in order to guarantee security but also resilience of the XFS-Network.&#x20;
+# XFSGO 介绍
 
-### Overview
+### 概述
 
-XFS makes difference with the following features:
+XFS具有以下特性：
 
-#### High performance
+**高性能**
 
-There are many optimizations to storage proof and space-time proof algorithms required for distributed file storage.that XFS has implemented.which improves XFS performance and avoided waste of resources greatly.
+XFS实现的分布式文件存储所需的防存储和防空时算法有很多优化，这大大提高了XFS的性能，避免了资源浪费。
 
-#### High Security
+**高安全性**
 
-We are okay with higher degrees of risk if a risk-increasing change provides very substantial benefits (eg. generalized state transitions, faster block times, consensus efficiency, etc). Although XFS  borrows many ideas that have already been tried and tested for several years in older blockchain like Bitcoin, there are a number of places in which XFS diverges from the most common way of handling certain protocol features, and there are also many situations in which XFS has been forced to develop completely new storage approaches because it offers functionality that is not offered by other existing systems, especially in encryption algorithms.
+如果风险增加的更改提供了非常实质性的好处（例如，广义状态转换、更快的阻塞时间、一致性效率等），我们可以接受更高程度的风险。尽管XFS借鉴了许多已经在比特币等较老区块链中尝试和测试了数年的想法，但XFS在许多地方与处理某些协议功能的最常见方式不同，在很多情况下，XFS被迫开发全新的存储方法，因为它提供了其他现有系统无法提供的功能，尤其是在加密算法中。
 
-#### XVM foundation
+**XVM基金会**
 
-XFS is a distributed state machine from point of clients. XFS's state is a large data structure which holds not only all accounts and balances, but a machine state, which can change from block to block according to a pre-defined set of rules, and which can execute arbitrary machine code. The specific rules of changing state from block to block are defined by the XVM. by which XFS smart contracts that defined by clients according  to scenarios can be executed to implement all kinds of requirements.
+从客户机的角度来看，XFS是一个分布式状态机。XFS的状态是一个大型数据结构，它不仅保存所有帐户和余额，还保存一个机器状态，可以根据预定义的一组规则在不同的块之间更改，并且可以执行任意机器代码。从一个块到另一个块改变状态的具体规则由XVM定义。可以执行客户根据场景定义的XFS智能合约来实现各种需求。
 
-#### Simplicity
+**简单**
 
-We believe that the bottom level architecture of XFS should be as simple as possible, and the interfaces to XFS (including high level programming languages for developers and the user interface for users) should be as easy to understand as possible. Where complexity is inevitable, it should be pushed into the "middle layers" of the protocol, that are not part of the core consensus but are also not seen by end users, argument serialization and deserialization scripts, storage data structure models, the  badger storage interface and the wire protocol, etc.
+我们认为XFS的底层架构应该尽可能简单，XFS的接口（包括面向开发人员的高级编程语言和面向用户的用户界面）应该尽可能容易理解。如果复杂性不可避免，则应将其推入协议的“中间层”，该层不是核心共识的一部分，但最终用户也看不到，参数序列化和反序列化脚本、存储数据结构模型、badger存储接口和wire协议等。
 
-#### Scalability & Extensibility
+**可伸缩性和可扩展性**
 
-XFS smart contracts are extremely flexible, capable of both holding large quantities of tokens and running immutable logic based on previously deployed smart contract code. It is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities in smart contracts and unexpected behavior in XFS. Apart from that. you also can develop applications  instead of file storage by XFS, for example, different kinds of DAPPs.
+XFS智能合约非常灵活，既能持有大量令牌，又能基于先前部署的智能合约代码运行不变的逻辑。它也是吸引攻击者利用智能合约中的漏洞和XFS中的意外行为获利的完美生态系统。除此之外。您还可以通过XFS开发应用程序而不是文件存储，例如，不同类型的DAPP。
 

@@ -1,36 +1,36 @@
-# Chain
+# 本地链管理
 
-During the operation of the node, whether it is synchronous data from the network or locally encapsulated blocks, historical block data will be generated locally. You can use the chain command to view local historical chain data. For example, you can view the latest local blocks through the following command:
+在节点运行过程中，不管是来自于网络的同步数据，或者本地封装的区块，都将会在本地产生历史的区块数据。您可以使用 `chain` 命令查看本地的历史链数据。例如：你可以通过以下命令查看本地的最新区块：
 
 ```
 xfsgo chain gethead
 ```
 
-### Blocks
+### 区块查询
 
-The most basic function is to query the corresponding block data through the specified height:
+最基础的功能是通过指定高度查询对应的区块数据：
 
 ```
 xfsgo chain getblockbynum <number>
 ```
 
-You can also specify the unique hash value of the block to query the specific block data
+当然也可以指定区块的唯一 HASH 值查询具体区块数据：
 
 ```
 xfsgo chain getblockbyhash <hash>
 ```
 
-### Trsactions
+### 交易查询
 
-You can use the gettxbyhash command to query the transaction information encapsulated by this miner or other node miners by specifying the unique hash value of the transaction:
+您可以使用 `gettxbyhash` 命令通过指定交易的唯一 HASH 值查询已经被本矿工或者其他节点矿工封装的交易信息：
 
 ```
 xfsgo chain gettxbyhash <hash>
 ```
 
-### Receipts
+### 回执查询
 
-When the transaction is executed, the receipt information will be generated to attach the execution result. You can use `getreceiptbytxhash` to query the specific receipt information of the hash value of the specified transaction
+当交易被执行必然会产生回执信息，用以附加执行结果。你可以使用 `getreceiptbytxhash` 查询指定交易 HASH 值的具体回执信息
 
 ```
 xfsgo chain getreceiptbytxhash <hash>

@@ -1,6 +1,6 @@
-# DAEMON Subcommand
+# DAEMON 子命令
 
-### Usage
+### 用法
 
 ```
 xfsgo daemon [--datadir <filename>] [--netid <number>]
@@ -8,24 +8,24 @@ xfsgo daemon [--datadir <filename>] [--netid <number>]
              [--testnet] [--bootstrap <node1,...>]
 ```
 
-### Command options
+### 命令选项
 
 *   **--datadir, -d \<filename>**
 
-    Set the global data directory, which will be created in the system user directory by default
+    设置全局数据目录，默认将在系统用户目录创建
 *   **--netid, -n \<number>**
 
-    Set the network ID, which is not specified as the primary network by default (0)
+    设置网络 ID，默认不指定为主网（0）
 *   **--p2paddr, -p \<addr>**
 
-    Set the P2P node service network listening address and port. Default: 0.0.0.0:9091
+    设置 P2P 节点服务网络监听地址以及端口，默认：`0.0.0.0:9091`
 *   **--rpcaddr, -r \<addr>**
 
-    Set the RPC service network listening address and port
+    设置 RPC 服务网络监听地址以及端口
 *   **--testnet, -t**
 
-    Start the test network. This option overrides the netid option setting
+    启动测试网络。该选项将会覆盖 netid 选项设置
 *   **--bootstrap \<uri\[,uri...]>**
 
-    Set the boot node. Multiple node links are separated by commas
+    指定引导节点。多个节点链接使用逗号分隔
 

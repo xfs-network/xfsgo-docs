@@ -1,34 +1,35 @@
-# WALLET Subcommand
+# WALLET 子命令
 
-### Usage
+### 用法
 
 ```
 xfsgo wallet [options] <sub-command>
 ```
 
-### Commands
+### 子命令列表
 
 *   **list**
 
-    Get the list of all accounts in the local Wallet
+    查询本地钱包中的所有账户列表
 *   **new**
 
-    Create wallet account
+    创建钱包账户
 *   **setdef \<address>**
 
-    Set default wallet account
+    设置默认的钱包账户
 *   **getdef**
 
-    Get the default wallet address
+    获取默认的钱包地址
 *   **transfer \[from] \<to> \<value>**
 
-    Send transfer transaction using local Wallet
+    使用本地钱包发送转账交易
 *   **export \<address>**
 
-    Exports the private key of the specified address
+    导出指定地址的私钥
 *   **import \<private\_key>**
 
-    Import the account with the specified private key
+    导入指定私钥的账户
 *   **del \<address>**
 
-    Delete the specified wallet account
+    删除指定的钱包账户
+

@@ -1,40 +1,40 @@
-# Miner
+# 启动挖矿
 
-Miners are participants on the network who perform the work needed to advance the blockchain and maintain its effectiveness. In order to provide these services, miners are paid in local cryptocurrency.
+“矿工”是网络上的参与者，他们执行推进区块链并保持其有效性所需的工作。为了提供这些服务，矿工以本机加密货币获得报酬。
 
-Mining is the process of creating new blocks. New blocks are always created in xfsgo network, but these blocks need to be protected by workload proof so that other nodes can accept them. Mining is to create the value of these workloads.
+挖矿是创建新区块的过程。xfsgo网络中一直在创建新的区块，但是这些区块需要通过工作量证明来保护，以便其他节点接受它们。挖矿就是创造这些工作量证明的价值。
 
-Before starting mining, always ensure that your blockchain is fully synchronized with the network chain, otherwise you will not be able to mine on the correct chain, and your blockawards will be worthless. You can use the following command to view the progress of the current synchronization:
+在开始挖矿之前，始终确保您的区块链与网络链完全同步，否则您将无法在正确的链上挖矿，并且您的区块奖励将没有价值。您可以使用用以下命令查看当前同步的进度：
 
 ```
 xfsgo chain syncstatus
 ```
 
-### Start worker
+### 启动矿工
 
-When the chain data synchronization is completed, use the `start` command to start the miner and start work
+当链数据同步完成后，使用 `start` 命令启动矿工，开始工作
 
 ```
 xfsgo miner start
 ```
 
-By default, the above command will start an appropriate number of worker threads based on the maximum number of threads of the local computer's CPU
+上述命令默认将以本地计算机的 CPU 最大线程数作为参考启动合适数量的工作线程
 
-To customize the number of worker threads at startup, you can specify the workers parameter
+若需在启动时自定义工作线程数量，可以指定`workers`参数
 
 ```
 xfsgo miner start --workers <number>
 ```
 
-You can also use the `setworkers` command after startup to dynamically adjust the number of working threads running
+你也可以在启动后使用 `setworkers` 命令可以动态调整运行中的工作线程数量
 
 ```
 xfsgo miner setworkers <number>
 ```
 
-### Check running status
+### 查看运行状态
 
-Use the `status` command to view the working status of the current miner and some reference indicators:
+使用 `status` 命令查看当前矿工的工作状态以及一些参考指标
 
 ```
 xfsgo miner status
