@@ -21,3 +21,4 @@
   * [WALLET Subcommand](references/cli-command-reference/wallet-subcommand.md)
   * [TXPOOL Subcommand](references/cli-command-reference/txpool-subcommand.md)
   * [MINER Subcommand](references/cli-command-reference/miner-subcommand.md)
+  * [CHAIN Subcommand](references/cli-command-reference/chain-subcommand.md)
