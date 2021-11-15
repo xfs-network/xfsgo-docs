@@ -28,4 +28,5 @@
 ## community
 
 * [Languages](community/languages/README.md)
+  * [English](https://docs.xfs.tech)
   * [中文-简体](https://cn.docs.xfs.tech)
