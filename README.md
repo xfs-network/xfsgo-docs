@@ -14,7 +14,7 @@ There are many optimizations to storage proof and space-time proof algorithms re
 
 We are okay with higher degrees of risk if a risk-increasing change provides very substantial benefits (eg. generalized state transitions, faster block times, consensus efficiency, etc). Although XFS  borrows many ideas that have already been tried and tested for several years in older blockchain like Bitcoin, there are a number of places in which XFS diverges from the most common way of handling certain protocol features, and there are also many situations in which XFS has been forced to develop completely new storage approaches because it offers functionality that is not offered by other existing systems, especially in encryption algorithms.
 
-#### XVM foundation
+#### XVM
 
 XFS is a distributed state machine from point of clients. XFS's state is a large data structure which holds not only all accounts and balances, but a machine state, which can change from block to block according to a pre-defined set of rules, and which can execute arbitrary machine code. The specific rules of changing state from block to block are defined by the XVM. by which XFS smart contracts that defined by clients according  to scenarios can be executed to implement all kinds of requirements.
 
