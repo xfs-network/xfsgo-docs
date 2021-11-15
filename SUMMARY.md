@@ -18,3 +18,4 @@
 
 * [CLI-Command Reference](references/cli-command-reference/README.md)
   * [DAEMON Subcommand](references/cli-command-reference/daemon-subcommand.md)
+  * [WALLET Subcommand](references/cli-command-reference/wallet-subcommand.md)
