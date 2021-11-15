@@ -49,7 +49,7 @@ miner:
 
 storage:
   # path of data storage
-  # default: ~/.xfsdb or $HOME/.xfsdb
+  # default: $HOME/.xfsdb
   # you can customize this configuration option according to your actural machain env.
   datadir: ""
   # path of block storage
