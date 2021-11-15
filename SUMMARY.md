@@ -24,3 +24,8 @@
   * [CHAIN Subcommand](references/cli-command-reference/chain-subcommand.md)
   * [NET Subcommand](references/cli-command-reference/net-subcommand.md)
 * [Configuration Reference](references/configuration-reference.md)
+
+## community
+
+* [Languages](community/languages/README.md)
+  * [中文-简体](https://cn.docs.xfs.tech)
