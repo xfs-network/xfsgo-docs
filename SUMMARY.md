@@ -19,3 +19,5 @@
 * [CLI-Command Reference](references/cli-command-reference/README.md)
   * [DAEMON Subcommand](references/cli-command-reference/daemon-subcommand.md)
   * [WALLET Subcommand](references/cli-command-reference/wallet-subcommand.md)
+  * [TXPOOL Subcommand](references/cli-command-reference/txpool-subcommand.md)
+  * [MINER Subcommand](references/cli-command-reference/miner-subcommand.md)

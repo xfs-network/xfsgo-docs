@@ -20,7 +20,7 @@ You can also specify the unique hash value of the block to query the specific bl
 xfsgo chain getblockbyhash <hash>
 ```
 
-### Transactions
+### Trsactions
 
 You can use the gettxbyhash command to query the transaction information encapsulated by this miner or other node miners by specifying the unique hash value of the transaction:
 
