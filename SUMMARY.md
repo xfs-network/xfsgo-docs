@@ -12,3 +12,4 @@
 * [Node](base-usage/node.md)
 * [Wallet](base-usage/wallet.md)
 * [Miner](base-usage/miner.md)
+* [Chain](base-usage/chain.md)
