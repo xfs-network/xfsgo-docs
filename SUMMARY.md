@@ -24,3 +24,9 @@
   * [CHAIN 子命令](references/cli-command-reference/chain-subcommand.md)
   * [NET 子命令](references/cli-command-reference/net-subcommand.md)
 * [配置文件参考](references/configuration-reference.md)
+
+## 社区
+
+* [语言版本](community/languages/README.md)
+  * [English](https://docs.xfs.tech)
+  * [中文-简体](https://cn.docs.xfs.tech)

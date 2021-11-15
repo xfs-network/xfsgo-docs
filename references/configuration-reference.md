@@ -1,4 +1,4 @@
-# 配置文件参考
+# Configuration Reference
 
 配置文件格式如下：
 
@@ -12,12 +12,10 @@ rpclient:
   # RPC 客户端网关超时时间
   # 默认值：180s
   timeout: "180s"
-
 rpcserver:
   # daemon 守护进程启动的 RPC 服务网关地址
   # 默认为：127.0.0.1:9012
   listen: "127.0.0.1:9012"
-
 p2pnode:
   # P2P 节点的服务地址
   # 默认为：0.0.0.0:9011
@@ -25,7 +23,6 @@ p2pnode:
   # P2P 网络服务引导节点
   # 默认硬编码内置
   # bootstrap: []
-
 protocol:
   # 协议版本号
   # 默认为: 1
@@ -34,13 +31,11 @@ protocol:
   # 默认为主网：1
   # 可选内置测试网络：2。其他网络请使用额外的数值
   networkid: 1
-
 miner:
   # 设置矿工收益地址
   # coinbase: ""
   # 启动的工作线程数量
   numworkers: 10
-
 storage:
   # 程序相关数据存储路径
   # 默认为：$HOME/.xfsgo
@@ -61,7 +56,6 @@ storage:
   # P2P 网络节点数据存储路径
   # 默认使用: ${dbdir}/nodes
   nodesdir: ""
-
 # 程序日志输出级别
 # 默认为 INFO
 logger:
