@@ -23,7 +23,7 @@ sudo apt-get install build-essential
 To build from source, Go 1.16.4 or above must be installed on the system. This guide doesn’t cover how to install Go itself, for details read the Go installation instructions and grab any needed bundles from the Go [download page](https://golang.org/doc/install) . Via Linux system for example: &#x20;
 
 ```bash
-curl -L https://golang.org/dl/go1.17.3.linux-amd64.tar.gz | tar -xz -C /usr/local
+curl -L https://golang.org/dl/go1.16.4.linux-amd64.tar.gz | tar -xz -C /usr/local
 ```
 
 Set the Environment variable PATH to point to Go:
