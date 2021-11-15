@@ -1,22 +1,21 @@
-# Quick start
+# 快速启动
 
-### Start daemon and sync the chain
+### 启动守护进程
 
-The `xfsgo` application runs as a daemon and a client to control and interact with that daemon. A daemon is a long-running program that is usually run in the background.
+xfsgo 应用程序作为守护进程和客户端运行，以控制该守护进程并与之交互。守护进程是一个长期运行的程序，通常在后台运行。
 
-You can start the daemon with the following command:
+您可以使用以下命令启动守护进程：
 
 ```
 xfsgo daemon
 ```
 
-If you run it for the first time, xfsgo will initially set the data directory to `~/.xfsgo` by default. At the same time, xfsgo will start the P2P network service and connect to the default bootstrap node for network data synchronization.
+如果是第一次运行，xfsgo 将会设置默认的数据目录为 `~/.xfsgo`。同时，xfsgo 将启动 P2P 网络服务并连接到默认引导节点进行网络数据同步。
 
-### Interact with the daemon
+### 与守护进程交互
 
-The xfsgo command allows you to interact with a running xfsgo daemon. xfsgo comes with built-in CLI documentation. You can view with the following command:
+xfsgo 命令允许您与正在运行的 xfsgo 守护进程交互。xfsgo 附带内置的 CLI 文档。您可以使用以下命令查看
 
-```
+```bash
 xfsgo -h
 ```
-

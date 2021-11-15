@@ -1,53 +1,55 @@
-# Node
+# 节点配置
 
-So far, the xfsgo daemon program has realized that the full nodes in the XFS network are the nodes that store all the data of the xfsgo blockchain and are connected to the blockchain network through P2P. In the blockchain network, all the full nodes are equal, acting as both clients and servers.
+现目前为止 xfsgo daemon 程序实现的是 XFS 网络中全节点（full nodes）是存储 xfsgo 区块链全部数据的节点，通过 P2P 的方式与区块链网络连接，在区块链网络中，所有的全节点都是平等的，既充当客户端又充当服务器。
 
-### Select network
+### 网络的选择
 
-In order to make XFS network nodes more flexible to adapt to various extended networks, as well as development, debugging and local private chain deployment, xfsgo uses netid to act on node configuration to distinguish different network environments and initialize mutually isolated chain data.
+为了使得 XFS 网络节点更加灵活的适应各种扩展网络，以及开发调试和本地私链部署，XFSGO 使用 netid作用于节点配置，用以区分不同的网络环境，以及初始化相互隔离的链数据。
 
-When using xfsgo daemon to start the node, it will default to the main network (main net, id = 1). Of course, the xfsgo program also provides a network environment for developing tests: test net (test net, id = 2). You can start the test network node in the following ways
+使用 xfsgo daemon 启动节点时将默认为主网（main net, id=1），当然在 xfsgo 程序中同样提供用以开发测试的网络环境：测试网（test net, id=2），你可以通过以下方式启动测试网节点
 
-```
+```bash
 xfsgo daemon --testnet
 ```
 
-After the node starts, it will continue to try to connect to other nodes on the network until it has a peer. If you enable UPnP on your router or run XFS nodes on an Internet facing server, connections from other nodes will also be accepted.
+节点启动后将会不断尝试连接到网络上的其他节点，直到它有对等点为止。如果您在路由器上启用了 UPnP 或在面向 Internet 的服务器上运行 XFS 节点，也将接受来自其他节点的连接。
 
-For the initial startup, the program has built-in boot nodes, which can quickly connect to the network and continuously spread to other nodes of the network. You can use the following command to customize the boot node you need to connect to:
+为了最初的启动，程序内置了引导节点在启动时能够快速的连接到网络并不断的向网络其他节点扩散。你可以使用以下命令自定义你需要连接的引导节点：
 
 ```
 xfsgo daemon --bootstrap <node[,node...]>
 ```
 
-### Local network
+### 本地网络搭建
 
-XFSGO provides more network expansion options. You can flexibly configure and build local private network nodes.
+xfsgo 提供更多的网络扩展选项，您可以灵活的配置并搭建本地私有网络节点。
 
-### Node ID
+### 节点身份以及连接协议
 
-Node ID is used in XFS network to identify node uniqueness. After the node is started, you can view your node ID in the following ways
+XFS 网络中使用 node id 用以标识节点唯一性，在节点启动后你可以通过以下方式查看你的节点 ID
 
 ```
 xfsgo net getid
 ```
 
-When you need to connect to the specified network node, you must obtain the network ID of the other party in advance and encode the connection path in the following format:
+当需要连接到指定的网络节点时，您必须提前获取到对方的网络 ID，并且使用以下格式编码连接路径
 
 ```
 xfsnode://<ip>:<port>/?id=<node_id>
 ```
 
-You can connect to the specified target node with the following command
+通过以下命令可以连接到指定的目标节点
 
 ```
 xfsgo net addpeer <peer_path>
 ```
 
-### RPC Service
+### RPC 服务
 
-Xfsgo node provides fully managed RPC services, adopts json-rpc 2.0 standard, supports HTTP/s and websocket protocol access, and is bound to the local port 9012 by default. You can package the port according to the security specification and publish it.
+XFSGO 节点提供完全管理的 RPC 服务，采用 JSON-RPC 2.0 标准，支持 http/s、websocket 协议方式访问，默认绑定本机的 9012 端口。你可以根据安全规范包装端口并公布。
 
 {% hint style="warning" %}
-RPC service has full access to nodes, including wallet and node status. For the sake of your asset security and system security and stability, please standardize your security measures. If it is not necessary, please do not publish your RPC port
+RPC 服务具有节点完全访问能力，包括钱包以及节点状态等。为了您的资产安全以及系统安全稳定请规范您的安全措施，如非必要请不要公布您的 RPC 端口
 {% endhint %}
+
+RPC 服务文档请参阅：RPC API 参考手册

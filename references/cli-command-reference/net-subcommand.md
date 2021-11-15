@@ -1,24 +1,22 @@
-# NET Subcommand
+# NET 子命令
 
-### Usage
+### 用法
 
 ```
 xfsgo net [options] <sub-command> 
 ```
 
-
-
-### Commands
+### 子命令列表
 
 *   **addpeer \<peer\_link>**
 
-    Add a peer node for the specified link and establish a connection
+    添加指定链路的对等节点并建立连接
 *   **delpeer \<node\_id>**
 
-    Deletes the peer node with the specified ID from the locally known link
+    从本地已知的链路中删除指定的 ID 的对等节点
 *   **getid**
 
-    Get the ID of the local node
+    查询本地节点的 ID
 *   **peers**
 
-    Get locally known peer-to-peer links and node information
+    查询本地已知的对等链路以及节点信息

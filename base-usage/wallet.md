@@ -1,58 +1,64 @@
-# Wallet
+# 钱包管理
 
-XFSGO program has built-in lightweight wallet service. When the daemon starts, a default wallet account will be created.
+xfsgo 程序内置了轻量级钱包服务，当守护进程启动时将会创建一个默认钱包账户。
 
-You can view your wallet account list through the following command:
+您可以通过以下命令查看您的钱包账户列表:
 
 ```
 xfsgo wallet list
 ```
 
-### Create Account
+### 创建交易账户
 
-Create an account address using the following command:
+使用以下命令创建交易账户地址
 
 ```
 xfsgo wallet new
 ```
 
-### Default address
+### 设置默认地址
 
-During the running of the program, some of your operations will directly use the default address, such as mining, transfer, etc.
+在程序运行过程中，您的一些操作将会直接使用默认地址，例如：挖矿、转账等。
 
-You can use the following command to view the current default address
+您可以使用以下命令查看当前的默认地址
 
 ```
 xfsgo wallet getdef
 ```
 
-### Transfer transaction
+通过以下命令设置一个已知的地址作为默认地址
 
-Use the `transfer` command to initiate a transfer transaction
+```
+xfsgo wallet setdef <address>
+```
+
+### 发送交易
+
+使用 `transfer` 命令发起一笔转账交易
 
 ```
 xfsgo wallet transfer <to> <val>
 ```
 
-The above command will initiate the specified number of transfer transactions using the default address
+以上命令将会使用默认地址发起指定数量的转账交易
 
-To initiate a transfer transaction from the specified account address, use the following command
+要从指定的账户地址发起转账交易，使用以下命令
 
 ```
 xfsgo wallet transfer <from> <to> <val>
 ```
 
-For more advanced options, you can use the `help` option to view the help document
+更多的高级选项可以使用 `help` 选项查看帮助文档
 
-### Export and import
+### 备份以及导入
 
-Use the `export` command to back up and export the private key file of the specified account address
+使用 `export `命令备份导出指定账户地址的私钥文件
 
 ```
 xfsgo wallet export <address>
 ```
 
-You can import the backup wallet address through the following command
+你可以通过以下命令导入备份的钱包地址
 
 ```
 xfsgo wallet import <key>
