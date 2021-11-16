@@ -26,7 +26,7 @@
 * [配置文件参考](references/configuration-reference.md)
 
 ## 社区
-
+* [文档贡献指南](community/docs-contribute.md)
 * [语言版本](community/languages/README.md)
   * [English](https://docs.xfs.tech)
   * [中文-简体](https://cn.docs.xfs.tech)
