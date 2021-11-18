@@ -18,7 +18,7 @@ XFSGO 文档内容公开托管在 GitHub 仓库中（该仓库由 XFS 社区自�
 2. 单击屏幕右上角的 **fork** 按钮，以在您的 GitHub 帐户中创建副本。
 3. 克隆您的 **fork** 到本地，然后进行所需的任何更改
 4. 当您准备将这些更改发送给我们时，请将更改推送到您的 fork 仓库
-5. 进入 fork 仓库的索引页面，然后单击 **New Pull Request** 提交 PR (Poll request)
+5. 进入 fork 仓库的索引页面，然后单击 **New Pull Request** 提交 PR (Pull Request)
 
 ## 国际化语言版本
 
